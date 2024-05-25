@@ -1,0 +1,22 @@
+
+.cover-photo
+{@media screen and (max-width: 600px){   
+    .cover-photo {      
+        content:url("../images/roger-harrison-2oKA5NUHyMg-unsplash-\ mobile\ crop-s.jpg");
+    } 
+}
+@media screen and (min-width: 1024px){      
+    .cover-photo {        
+        content:url("../images/roger-harrison-2oKA5NUHyMg-unsplash-crop-s.jpg");  
+    } 
+}
+@media screen and (min-width: 1200px){    
+    .cover-photo {         
+        content:url("../images/roger-harrison-2oKA5NUHyMg-unsplash-crop-s.jpg");   
+    } 
+}
+.cover-photo {
+    width: fit-content;
+    max-height: auto;
+} 
+}
