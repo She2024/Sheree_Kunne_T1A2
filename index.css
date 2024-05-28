@@ -45,13 +45,21 @@ header {
 #nav-items {
     width: 40%;
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     -ms-flex-align: end;
     color: var(--secondary-color);
 
 }
 #nav-items a {
     text-decoration: none;
+}
+nav a:hover {
+    background-color: var(--purple);
+    color: black;
+    display: inline-block;
+    animation-name: spin;
+    animation-duration: 1sec;
+    
 }
 
 /* Footer content */

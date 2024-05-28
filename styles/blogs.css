@@ -1,0 +1,39 @@
+
+
+
+
+
+blog {
+    margin-top: 15dvw;
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: 5%;
+
+}
+blog img{
+    width: 75dvw;
+    border-radius: 5%;
+}
+
+@media screen and (min-width: 600px) {
+    main{
+        display: flex;
+        flex-direction: wrap;
+        gap: 20px;
+        justify-content: space-around;
+          /* Text align is horizontal */
+    text-align: center;
+    /* align items vertical */
+    align-items: center;
+    }
+   
+    }
+    blog img{
+        width: 25dvw;
+        }
+    blog {
+        margin-top: 15dvw;
+        background-color: var(--purple);
+        padding: 1rem;
+        border-radius: 5%;
+}

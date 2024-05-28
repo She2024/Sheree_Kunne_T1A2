@@ -6,7 +6,7 @@
   
   .image {
     display: block;
-    width: 100dvw;
+    width: 50dvw;
     height: 70dvh;
     margin-bottom: 0;
   }
@@ -42,8 +42,8 @@
   .touch-screen image {
   display: none/block;
 } }
-
+/*
 @media screen and (min-width: 300px){
   .touch-screen {
-  display: block;
-} }
+  display: img;
+} }*/
