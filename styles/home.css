@@ -1,4 +1,4 @@
-
+@media screen and (min-width: 900px) {
 .container {
     position: relative;
     width: 100dvw;
@@ -39,3 +39,11 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  .touch-screen image {
+  display: none/block;
+} }
+
+@media screen and (min-width: 300px){
+  .touch-screen {
+  display: block;
+} }
