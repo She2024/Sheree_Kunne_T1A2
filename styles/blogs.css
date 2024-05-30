@@ -33,7 +33,8 @@ blog img{
         }
     blog {
         margin-top: 15dvw;
-        background-color: var(--purple);
+        background-color: white;
+        border-color: var(--secondary-color);
         padding: 1rem;
         border-radius: 5%;
 }

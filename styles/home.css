@@ -1,25 +1,33 @@
 @media screen and (min-width: 900px) {
 .container {
     position: relative;
-    width: 100dvw;
+    display: grid;
+    place-items: centre;
+    width: 10%dvw;
+
+
   }
   
-  .image {
+  .home {
     display: block;
-    width: 50dvw;
-    height: 70dvh;
+    width: 30%dvw;
+    height: auto;
     margin-bottom: 0;
+    display: grid;
+    place-items: centre;
+    padding-left: 15%;
   }
   
   .overlay {
-    position: absolute;
+    position: flex;
+    float: centre;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 05;
     right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
+    height: 50%;
+    width: 50%;
+    opacity: 1;
     transition: .5s ease;
     background-color: var(--secondary-color);
   }
@@ -30,7 +38,8 @@
   
   .text {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,11 +48,4 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .touch-screen image {
-  display: none/block;
-} }
-/*
-@media screen and (min-width: 300px){
-  .touch-screen {
-  display: img;
-} }*/
+  }
