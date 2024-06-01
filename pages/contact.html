@@ -6,6 +6,7 @@
     <title>Sheree Kunne Portfolio</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -29,23 +30,26 @@
         </nav> 
     </header>
     <main>
+        <!--Online form contact form with a max number of input character for fields-->
         <div class="container">
             <form action="/action_page.php">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" maxlength="120" placeholder="Your name..">
           
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <input type="text" id="lname" name="lastname" maxlength="120" placeholder="Your last name..">
           
               <label for="country">Country</label>
               <select id="country" name="country">
                 <option value="australia">Australia</option>
+                <option value="newz">New Zealand</option>
+                <option value="uk">United Kingdom</option>
                 <option value="canada">Canada</option>
                 <option value="usa">USA</option>
               </select>
           
               <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <textarea id="subject" name="subject" maxlength="900"placeholder="Write something.." style="height:200px"></textarea>
           
               <input type="submit" value="Submit">
             </form>

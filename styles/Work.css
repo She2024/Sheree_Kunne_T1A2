@@ -1,0 +1,75 @@
+
+
+body {
+    background-color: var(--secondary-color);
+}
+* {
+    box-sizing: border-box;
+    border-color: var(--primary-background);
+    justify-content: space-between;
+   
+  }
+  #container {
+    background-color: white;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 49%;
+    padding: 10px;
+    justify-content: space-between;
+    padding: auto;
+    border: 5px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    margin: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    justify-content: space-between;
+    padding: auto;
+    background-color: white;
+    
+  }
+  /* Style the buttons */
+  .btn {
+    border: 5px;
+    outline:auto;
+    padding: 12px 16px;
+    background-color:white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .btn.active {
+    background-color: var(--primary-background);
+    color: white;
+  }
+  #design {
+    width: 35%;
+    padding: 0 -2% 0 5%;
+    margin: 0;
+    border: none;
+    margin-bottom: 0;
+  }
+  #dev {
+    width: 35%;
+    padding: 0 -2% 5% 5%;
+    margin: 0;
+    border: none;
+    margin-bottom: 0;
+  }
+  #lang {
+    width: 20%;
+    padding: 0 -2% 0 80%;
+    margin: 0;
+    border: none;
+  }

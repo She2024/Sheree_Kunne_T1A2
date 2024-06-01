@@ -6,7 +6,7 @@
     <title>Sheree Kunne Portfolio</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../styles/Work.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -29,7 +29,68 @@
         </nav> 
     </header>
     <main>
-        
+        <div id="btnContainer">
+            <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+            <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+          </div>
+          <br>
+          
+          <Section class="row">
+            <div class="column" id="container">
+              <h1>Projects</h1>
+              <h2>Current Published work </h2>
+                <p>I am currently engaged as Content and Communication Officer for Queensland Registry of Births, Deaths and Marriages Web Team, a team of two.
+                I am responsible for the creation, management and continuous improvement of over 200 web assets and PDFs.  Our aim is to provide, accessible, correct and easy to understand information about the registries products, services and policies. 
+                You can find evidence of work of my work at the Queensland <a href="https://www.qld.gov.au/law/rbdm"> <strong>Registry of Births, Deaths and Marriages</strong></a>. 
+                
+                <h2>Future release project </h2>
+                <p>The Queensland Registry of Births, Deaths and Marriages, Legislation Review Project is well under way, 24 June 2024 our new legislation will come into effect. I have been working with Web Team to update the registry web assets and PDFs to align with new legislative requirements this includes new form and web asset builds for new services. So watch this space.
+                </p>
+            </div>
+            <div class="column" id="container">
+              <h1>About me</h1>
+              <p style="margin-bottom: 0;">I value clear communication, accessibility and honesty in all I do. I enjoy the thrill and challenge of coding. I use a range of tools to assist me when planning, building and reviewing web assets and PDFs from the planning to publishing. </p>
+              <div class="column" id="design">
+              <h2>Design & Management Tools</h2>
+              <ul><li>Figma</li>
+                  <li>Canvas</li>
+                  <li>Trello</li>  
+                  <li>Jira</li> 
+                  <li>QGOV eDOCs</li>             
+             </ul>
+            </div>
+            <div class="column" id="dev">
+                <h2>Development Tools</h2>
+                <ul><li>Ubuntu/WSL</li>
+                    <li>GitHub</li>
+                    <li>VS Code</li>
+                    <li>Netlify</li>
+                    <li>Squiz Matrix 6</li>
+                    <li>QLD Online services Submission Form Handler</li>
+               </ul>
+              </div>
+              <div class="column" id="lang">
+                <h2>Languages</h2>
+                <ul><li>Unix</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+               </ul>
+              </div>
+        </div>
+        </section>
+          
+          <section class="row">
+            <div class="column" id="container">
+              <h2>GitHub</h2>
+              <p>You can follow my progress and see my working progress on <a href="https://github.com/She2024"> <strong>GitHUb</strong></a>.</p>
+            </div>
+            <div class="column" id="container">
+              <h2>Resume</h2>
+              <p>More information on my skills, acheivements can be found on my resume.
+              <a href="../support docs/Resume SK Brand.pdf" download><strong>Download the pdf</strong></a>. </p>
+            </div>
+            </section>
     </main>
     <footer>
         <div class="social-media">
@@ -47,6 +108,40 @@
            <p>Email: Sheree.Kunne@gmail.com</p>
            <p>Location: Brisbane QLD 4000</p>
         </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i> Sheree Kunne 2024 </p></div>
     </footer>
+    <script>
+        // Get the elements with class="column"
+        var elements = document.getElementsByClassName("column");
+        
+        // Declare a loop variable
+        var i;
+        
+        // List View
+        function listView() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "100%";
+          }
+        }
+        
+        // Grid View
+        function gridView() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "49%";
+          }
+        }
+        
+        /* Optional: Add active class to the current button (highlight it) */
+        var container = document.getElementById("btnContainer");
+        var btns = container.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
 </body>
 </html>
