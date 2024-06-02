@@ -1,3 +1,6 @@
+body {
+  background-color: var(--primary-color);
+}
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -26,7 +29,9 @@ input[type=text], select, textarea {
   
   .container {
     border-radius: 5px;
-    border: 20px;
+    border: 0px;
+    border-color: var(--secondary-color);
+    border-style: solid;
     width: 60%;
     margin-left: 17%;
     margin-right: 10%;

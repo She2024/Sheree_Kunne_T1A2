@@ -55,21 +55,21 @@ body {
   }
   #design {
     width: 35%;
-    padding: 0 -2% 0 5%;
+    padding: 0 0 0 5%;
     margin: 0;
     border: none;
     margin-bottom: 0;
   }
   #dev {
     width: 35%;
-    padding: 0 -2% 5% 5%;
+    padding: 0 0 5% 5%;
     margin: 0;
     border: none;
     margin-bottom: 0;
   }
   #lang {
     width: 20%;
-    padding: 0 -2% 0 80%;
+    padding: 0 0 0 8%;
     margin: 0;
     border: none;
   }
