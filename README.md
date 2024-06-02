@@ -33,10 +33,11 @@ Functional navigation bar and logo links to home page
 
 ## Sitmap
 
-Site map saved in folder /home/she2024/2024-apr-std-class/Sheree_Kunne_T1A2/support docs/T1A2 _ Portfolio Sitemap.drawio.png
+Site map saved in support docs folder /home/she2024/2024-apr-std-class/Sheree_Kunne_T1A2/support docs/T1A2 _ Portfolio Sitemap.drawio.png
 
 
 ## Wireframes 
+Screen shots of wireframes in support doc folder
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F4YPA61scH24iRWtzMEmAvF%2FPortfolio%3Fnode-id%3D25-217%26t%3Dsj1yTvteVUR2RdWc-1" allowfullscreen></iframe>
 
 Some design changes were made during the build not all were updated on wireframe
