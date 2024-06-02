@@ -109,7 +109,7 @@ footer {
 }
 
 .copyright {
-    color: black;
+    color: var(--secondary-color);
     margin-top: 45px;
     float: center;
     margin-left: 10px;
