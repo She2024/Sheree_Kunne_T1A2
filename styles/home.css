@@ -1,14 +1,28 @@
+  /*Responsive screen size changes to formating for different screen sizes */
+/* For width smaller than 400px: */
+.container .container:hover {
+  background-repeat: no-repeat;
+  background-image: url('/home/she2024/2024-apr-std-class/Sheree_Kunne_T1A2/images/roger-harrison-2oKA5NUHyMg-unsplash- mobile crop-s.jpg'); 
+} 
 
-@media screen and (min-width: 900px) {
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+  .container { 
+     background-image: url('/home/she2024/2024-apr-std-class/Sheree_Kunne_T1A2/images/roger-harrison-2oKA5NUHyMg-unsplash background.jpg'); 
+  }
+/* Display text over image when mouse hovers for screens with a width over 800px*/
+@media screen and (min-width: 800px) {
 .container {
     position: relative;
     display: grid;
     place-items: centre;
     width: 800px;
     background-size: contain;
+      
   }
   .img {
-    max-width: fit-content ;
+    max-width: fit-content;
+
   }
   
   .home {
@@ -23,7 +37,7 @@
   
   .overlay {
     position: flex;
-    float: right;
+    float: left;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -41,6 +55,7 @@
   
   .text {
     color: white;
+    cursor: pointer;
     font-size: 50px;
     display: grid;
     position: absolute;
@@ -51,4 +66,4 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  }
+}}

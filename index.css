@@ -1,3 +1,4 @@
+/*index styling common across all pages provides consistent styling and colour palette*/
 :root {
     --primary-color: #ac9fbb;
     --secondary-color: #f7ebec;
@@ -32,38 +33,31 @@ header {
 .name {
     font-size: 32px;
 }
-
-#nav-items {
-    width: 30%;
-    display: block;
-    align-items: flex-end;
-    justify-content: space-around;
-    padding-left: 20%;
-       
-}
-
-#nav-items a {
-    text-decoration: none;
-    font-weight: bold;
-    margin: 16px;
-    padding: 12px 16px;
+ol {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 100px;
     background-color: var(--secondary-color);
     color: var(--primary-background);
-}
-    /* mouse over link */
-  a:hover {
-    color: var(--secondary-color);
-    font-size: larger;
-    background-color: var(--primary-background);
   }
   
-  /* selected link */
-  a:active {
-    color: var(--primary-background);
-   
-} 
-
-@media screen and (min-width: 600px) {
+  ol li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  ol li a:hover {
+    background-color: var(--primary-background);
+    color: var(--secondary-color);
+    font-size: Larger;
+  }
+   /*Responsive screen size changes to formating for different screen sizes */
+@media screen and (min-width: 800px) {
     header {
         display: flex;
         align-items: flex-end;
@@ -74,9 +68,6 @@ header {
         margin-bottom: 0;
     }
 
-    #nav-items {
-        width: 50%;
-    }
 }
 footer {
     background-color: var(--primary-background);

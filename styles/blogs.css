@@ -1,4 +1,4 @@
-
+/*blog display styling*/
 .blog {
     background-color: white;
     max-width: 300px;
@@ -13,9 +13,9 @@
     width: 300px;
     border-radius: 2%;
 }
-
+/* Accordion styling*/
 .accordion {
-    background-color: ;
+    
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -36,7 +36,9 @@
     background-color: white;
     overflow: hidden;
   }
-@media screen and (min-width: 600px) {
+
+  /*Responsive screen size changes to formating for different screen sizes */
+@media screen and (min-width: 800px) {
     main{
         display: flex;
         flex-direction: wrap;
